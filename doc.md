@@ -326,7 +326,7 @@ Displays the session owner details.
     /var/log/gluster/${session-owner}:remote-mirror.log
 
 3.Replace the session owner details (output of Step 1) to the output of the Step 2 to get the location of the log file. 
-   
+
 `/var/log/gluster/5f6e5200-756f-11e0-a1f0-0800200c9a66:remote-mirror.log`
 
 **Stopping Geo-replication**
@@ -433,7 +433,7 @@ Displays the session owner details.
     /var/log/gluster/${session-owner}:remote-mirror.log
 
 3.Replace the session owner details (output of Step 1) to the output of the Step 2 to get the location of the log file. 
-   
+
     `/var/log/gluster/5f6e5200-756f-11e0-a1f0-0800200c9a66:remote-mirror.log `
 
 
@@ -450,7 +450,7 @@ Displays the session owner details.
 **Solution**: GlusterFS Geo-replication invokes rsync v3.07 in the host as well as the remote machine, check if you have the desired version installed.
 
 **Description**: GlusterFS Geo-replication output of `status` command goes to `faulty` pretty soon with a backtrace similar to this:
-        
+
     2011-04-28 14:06:18.378859] E [syncdutils:131:log_raise_exception] <top>: FAIL:
     Traceback (most recent call last):
     File "/usr/local/libexec/glusterfs/python/syncdaemon/syncdutils.py", line 152, in twrap
